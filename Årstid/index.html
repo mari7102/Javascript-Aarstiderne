@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Årstid</title>
+</head>
+<body>
+    <img id="mainImg" />
+
+    <script>
+
+        var month = new Date().getMonth() + 1;
+        var imgName
+
+        if (month >= 3 && month <= 5) {
+
+            imgName = "Img/forår.jpg";
+        }
+
+        else if (month >= 6 && month <= 8) {
+            imgName = "Img/sommer.jpg";
+        }
+
+        
+        else if (month >= 9 && month <= 11) {
+            imgName = "Img/efterår.jpg";
+        }
+
+        else {
+
+            imgName = "Img/vinter.jpg";
+
+        }
+   
+
+        document.getElementById("mainImg").src = imgName;
+
+        document.getElementById("mainImg").width = 1000;
+    </script>
+
+</body>
+</html>
